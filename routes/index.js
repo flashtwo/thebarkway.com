@@ -8,8 +8,20 @@
     // xX   = require('./xX'),
     // xX   = require('./xX');
 
+exports.landing = function(req, res) {
+    res.render('landing', {
+        // function() {
+        // // this.selected='home';
+        // }
+    });
+};
+
 exports.home = function(req, res) {
-    res.render('home', {});
+    res.render('home', {
+        function() {
+            // var selected = 'home';
+        }
+    });
 };
 //
 // exports.xX = (req, res) => {

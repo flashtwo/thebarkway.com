@@ -18,8 +18,8 @@ app.post('*', bodyParser.json(), bodyParser.urlencoded({ extended: true }));
 // app.get('/', (req, res) => {
 // 	res.render('index.pug');
 // });
-app.get('/', routes.home);
-// app.get('/', routes.);
+app.get('/', routes.landing);
+app.get('/home', routes.home);
 // app.get('/', routes.);
 // app.get('/', routes.);
 // app.get('/', routes.);
