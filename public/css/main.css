@@ -24,13 +24,50 @@ html {
 
 body {
     background-color: #E3E6FF;
-    height: 100%;
-    width: 100%;
+    /*height: 100%;
+    width: 100%;*/
     /*margin-bottom: 10px;*/
-    box-shadow: 1px 1px 4px 0px #3a3839;
+    /*box-shadow: 1px 1px 4px 0px #3a3839;*/
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
     font-size: 14px;
+}
+
+body.container-fluid {
+    padding: 0;
+}
+
+.jumbotron {
+    background-image: url("//image.shutterstock.com/z/stock-photo-girl-playing-with-her-golden-retriever-dog-in-summer-park-soft-focus-with-sun-flare-effect-382469704.jpg");
+    background-size: cover;
+    background-position: top center;
+    /*margin: 0 0 0 auto;*/
+    padding: 0;
+    width: 100%;
+    height: 500px;
+    top: 0;
+    position: absolute;
+}
+
+.container-fluid .jumbotron {
+    padding-right: 0;
+    padding-left: 0;
+    border-radius: 2px;
+}
+
+.jt-filter {
+    z-index: 999;
+    /*background-color: rgba(64, 143, 22, 0.2);*/
+    height: 100%;
+    width: 100%;
+}
+
+#video-player, #video-player .row {
+    height: 100%;
+}
+
+div#services {
+    margin-top: 440px;
 }
 
 /* centered columns */
@@ -51,6 +88,11 @@ body {
     text-align: justify;
 }
 
+.justified-box {
+    padding-right: 50px;
+    /*text-align: justify;*/
+}
+
 .line-block {
     display: inline-block;
 }
@@ -65,26 +107,27 @@ body {
     background-image: url("/img/logo.png");
     background-size: contain;
     background-repeat: no-repeat;
+    width: 100px;
     /*margin: 15px;*/
 }
 
 div#mini-menu {
     text-align: center;
+    /*background-color: rgba(2, 2, 2, 0.8);*/
+    border: none;
 }
 
 ul.nav.navbar-nav {
     display: inline-block;
     float: none;
-    margin-right: 125px; /*move nav links*/
+    margin-right: 175px; /*move nav links*/
     /* display: block; */
     /*width: 300px;*/
     /*margin: 0 auto;*/
     /*float: none;*/
 }
 
-/*.nav-menu {
-    width: 100%;
-    margin-top: 100px;
+/*.nav {
 }*/
 
 /*a.navbar-brand {
@@ -96,7 +139,10 @@ ul.nav.navbar-nav {
 }*/
 
 .navbar-default {
-    background-color: transparent;
+    /*background-color: transparent;*/
+    background-color: rgba(2, 2, 2, 0.8);
+    border: none;
+    z-index: 999;
 }
 
 .navbar-toggle {
@@ -139,16 +185,58 @@ ul.nav.navbar-nav {
 
 /*#E3E6FF*/
 
-@media (min-width : 768px) {
+@media (min-width: 768px) {
     div#mini-menu {
         padding-top: 25px;
     }
+
+    /*.navbar-brand {
+        width: 100px;
+        height: 100px;
+        clear: both;
+    }*/
+
     .navbar>.container-fluid .navbar-brand {
+        /*float: left;*/
         margin-top: 0px;
         margin-left: 0px;
-        padding: 50px 50px;
+        padding: 0;
+        width: 200px;
+        height: 100px;
     }
+
+    div#services {
+    margin-top: 400px;
+    }
+    /*.jumbotron {*/
+        /*background-image: url("//image.shutterstock.com/z/stock-photo-girl-playing-with-her-golden-retriever-dog-in-summer-park-soft-focus-with-sun-flare-effect-382469704.jpg");*/
+        /*background-size: cover;*/
+        /*background-position: center;*/
+        /*height: 500px;*/
+    /*}*/
     /*.navbar-brand {
         margin-left: 15px;
     }*/
+}
+
+@media (min-width: 1000px) and (max-width: 1500px) {
+    .jumbotron {
+        /*background-position: top;*/
+        height: 700px;
+    }
+
+    div#services {
+        margin-top: 600px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .jumbotron {
+        /*background-position: top;*/
+        height: 900px;
+    }
+
+    div#services {
+        margin-top: 800px;
+    }
 }

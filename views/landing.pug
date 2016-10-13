@@ -1,5 +1,16 @@
 extends layout
 block content
+    .jumbotron
+        .jt-filter
+            #video-player.container-fluid
+                .row
+                    .col-sm-9
+                        p some words
+                    .col-sm-3
+                        div(align="center", class="embed-responsive embed-responsive-16by9")
+                            video.embed-responsive-item
+                                source(src="http://techslides.com/demos/sample-videos/small.mp4", type="video/mp4")
+                //- h1 thebarkway
     //- p big fancy landing page! with services
     //-
     #services.container
@@ -57,7 +68,7 @@ block content
             .col-md-10.col-centered
                 .col-md-4.col-sm-6
                     h3 U-Wash – $12
-                    p
+                    p.justified-box
                         br
                         |Convenient access tubs.
                         br
@@ -66,7 +77,7 @@ block content
                         |We do the cleanup!
                 .col-md-4.col-sm-6
                     h3 We Wash – $25
-                    p
+                    p.justified-box
                         br
                         br
                         |If you don’t want to wash your dog – we can!
@@ -78,7 +89,7 @@ block content
                 //- .col-sm-6
                 .col-md-4.col-sm-6
                     h3 Overnight Boarding – $12
-                    p
+                    p.justified-box
                         br
                         br
                         |(In addition to cost of daycare)
