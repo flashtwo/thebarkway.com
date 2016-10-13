@@ -1,17 +1,23 @@
 doctype html
-html
-    block link
-    -var menu = { 'home': '/home', 'blog': '/blog', 'contact': '/contact' };
+html(ng-app="app")
+    //- block link
+    -var menu = { 'home': '/home', 'services': '/services', 'contact': '/contact' };
     head
         title= 'The Barkway | Best Friends for Your Best Friend'
         meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
         meta(name="mobile-web-app-capable", content="yes")
         meta(name="apple-mobile-web-app-capable", content="yes")
         link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css')
+        link(rel='stylesheet', href="https://fonts.googleapis.com/css?family=Montserrat|PT+Sans+Caption|PT+Sans+Narrow")
         link(rel='stylesheet', href='css/main.css')
         //- link(rel='stylesheet', href= routeCss)
+        script(src='//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js')
+        script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js')
         script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.slim.min.js')
         script(src='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js')
-    body.container
+        script(src="app/app.js", type="application/javascript")
+        //- /*script(src="app/controllers.js",type="application/javascript")*/
+    body.container-fluid
         include nav
-        block content
+        div(ng-view)
+            block content

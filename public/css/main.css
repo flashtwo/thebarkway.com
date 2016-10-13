@@ -1,3 +1,154 @@
+/*margin: 0 auto;*/
+h2 {
+    font-family: 'PT Sans Caption', sans-serif;
+    font-size: 34px;
+}
+
+h3 {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 28px;
+}
+
 p {
-    background-color: rgba(166, 178, 222, 0.9);
+    /*background-color: rgba(166, 178, 222, 0.9);*/
+    /*background-color: rgba(249, 249, 249, 0.9);*/
+}
+
+html {
+    background-color: #35383B;
+    /*background-color: #8B6053;*/
+    height: 100%;
+    width: 100%;
+    /*padding-bottom: 10px;*/
+}
+
+body {
+    background-color: #E3E6FF;
+    height: 100%;
+    width: 100%;
+    /*margin-bottom: 10px;*/
+    box-shadow: 1px 1px 4px 0px #3a3839;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+}
+
+/* centered columns */
+.row-centered {
+    text-align:center;
+}
+
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+.col-centered-c {
+    text-align: justify;
+}
+
+.line-block {
+    display: inline-block;
+}
+
+.navbar-brand {
+    /*float: left;
+    height: 50px;*/
+    margin-left: 15px;
+    margin-top: 5px;
+    /*font-size: 18px;
+    line-height: 20px;*/
+    background-image: url("/img/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    /*margin: 15px;*/
+}
+
+div#mini-menu {
+    text-align: center;
+}
+
+ul.nav.navbar-nav {
+    display: inline-block;
+    float: none;
+    margin-right: 125px; /*move nav links*/
+    /* display: block; */
+    /*width: 300px;*/
+    /*margin: 0 auto;*/
+    /*float: none;*/
+}
+
+/*.nav-menu {
+    width: 100%;
+    margin-top: 100px;
+}*/
+
+/*a.navbar-brand {
+    display: inline-block;
+}*/
+
+/*.nav {
+    padding: 0 20%;
+}*/
+
+.navbar-default {
+    background-color: transparent;
+}
+
+.navbar-toggle {
+    border: 0;
+    /*border-color: #ddd; */
+}
+
+.row {
+    padding: 0 5px;
+}
+
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:focus,
+.navbar-default .navbar-nav > .active > a:hover {
+    color: #ddd;
+    background-color: #555;
+}
+
+.colreset {
+    padding: 0 5px;
+}
+
+.fullheight {
+    height: 100%;
+}
+
+/*
+#b3d88c
+
+#6D8B4C
+
+#A56B5A
+
+#8B6053
+
+#E4C9C1
+
+#8D91B2
+*/
+
+/*#E3E6FF*/
+
+@media (min-width : 768px) {
+    div#mini-menu {
+        padding-top: 25px;
+    }
+    .navbar>.container-fluid .navbar-brand {
+        margin-top: 0px;
+        margin-left: 0px;
+        padding: 50px 50px;
+    }
+    /*.navbar-brand {
+        margin-left: 15px;
+    }*/
 }

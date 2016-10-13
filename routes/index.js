@@ -8,21 +8,30 @@
     // xX   = require('./xX'),
     // xX   = require('./xX');
 
-exports.landing = function(req, res) {
-    res.render('landing', {
-        // function() {
-        // // this.selected='home';
-        // }
-    });
+exports.index = function(req, res){
+    res.render('landing', {});
 };
 
-exports.home = function(req, res) {
-    res.render('home', {
-        function() {
-            // var selected = 'home';
-        }
-    });
+/** serve jade enabled partials */
+exports.partials = function(req, res) {
+    res.render('partials/' + req.params.name);
 };
+
+// exports.landing = function(req, res) {
+//     res.render('landing', {
+//         // function() {
+//         // // this.selected='home';
+//         // }
+//     });
+// };
+
+// exports.home = function(req, res) {
+//     res.render('home', {
+//         function() {
+//             // var selected = 'home';
+//         }
+//     });
+// };
 //
 // exports.xX = (req, res) => {
 //     res.render('xX', () => {
