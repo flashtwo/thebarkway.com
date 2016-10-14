@@ -1,19 +1,17 @@
 /*margin: 0 auto;*/
+
 h2 {
     font-family: 'PT Sans Caption', sans-serif;
     font-size: 34px;
 }
-
 h3 {
     font-family: 'PT Sans Narrow', sans-serif;
     font-size: 28px;
 }
-
 p {
     /*background-color: rgba(166, 178, 222, 0.9);*/
     /*background-color: rgba(249, 249, 249, 0.9);*/
 }
-
 html {
     background-color: #35383B;
     /*background-color: #8B6053;*/
@@ -21,22 +19,18 @@ html {
     width: 100%;
     /*padding-bottom: 10px;*/
 }
-
 body {
     background-color: #E3E6FF;
     /*height: 100%;
     width: 100%;*/
     /*margin-bottom: 10px;*/
-    /*box-shadow: 1px 1px 4px 0px #3a3839;*/
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
     font-size: 14px;
 }
-
 body.container-fluid {
     padding: 0;
 }
-
 .jumbotron {
     background-image: url("//image.shutterstock.com/z/stock-photo-girl-playing-with-her-golden-retriever-dog-in-summer-park-soft-focus-with-sun-flare-effect-382469704.jpg");
     background-size: cover;
@@ -48,55 +42,98 @@ body.container-fluid {
     top: 0;
     position: absolute;
 }
-
 .container-fluid .jumbotron {
     padding-right: 0;
     padding-left: 0;
     border-radius: 2px;
 }
-
 .jt-filter {
     z-index: 999;
     /*background-color: rgba(64, 143, 22, 0.2);*/
     height: 100%;
     width: 100%;
+    padding: 15px;
 }
 
-#video-player, #video-player .row {
+#video-player, #video-player .row * {
     height: 100%;
 }
 
+/*#video-player, .col-xs-12.full-height {
+    height: 100%;
+}*/
+
+/*video {
+    border-radius: 4px;
+}*/
+/*#video-player .row .col-sm-6.shrink {
+    height: 0;
+}*/
+
+.embed-responsive.wrapper {
+    margin: 0 auto;
+    max-height: 325px;
+    vertical-align: middle;
+    padding: 15px;
+    /*float: right;*/
+    /*position: relative;*/
+}
+#play-btn {
+    /*position: absolute;*/
+    /*height: 75px;*/
+    /*line-height: 100px;*/
+    /*border-color: #000;
+    border-style: double;
+    border-radius: 100%;*/
+    /*box-shadow: 10px 10px 4px 10px #3a3839;*/
+    /*font-size: 50px;*/
+    /*top: 40%;*/
+    /*width: 200px;
+    height: 100px;*/
+    max-width: 100%;
+    /*width: 100%;*/
+    /*max-height: 100%;*/
+    /*max-width: 300px;*/
+    /*display: inline-block;*/
+    background: url('/img/vid-screen.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: drop-shadow(10px 10px 4px #000);
+    -webkit-filter: drop-shadow(10px 10px 4px #000);
+
+    /*left: 25%;*/
+}
+#video-player .row {
+    height: 50%;
+}
 div#services {
-    margin-top: 440px;
+    margin-top: 500px;
 }
 
 /* centered columns */
+
 .row-centered {
-    text-align:center;
+    text-align: center;
 }
-
 .col-centered {
-    display:inline-block;
-    float:none;
+    display: inline-block;
+    float: none;
     /* reset the text-align */
-    text-align:left;
+    text-align: left;
     /* inline-block space fix */
-    margin-right:-4px;
+    margin-right: -4px;
 }
-
 .col-centered-c {
     text-align: justify;
 }
-
 .justified-box {
     padding-right: 50px;
     /*text-align: justify;*/
 }
-
 .line-block {
     display: inline-block;
 }
-
 .navbar-brand {
     /*float: left;
     height: 50px;*/
@@ -111,16 +148,21 @@ div#services {
     /*margin: 15px;*/
 }
 
+nav.navbar.navbar-default {
+    position: fixed;
+    width: 100%;
+}
+
 div#mini-menu {
     text-align: center;
     /*background-color: rgba(2, 2, 2, 0.8);*/
     border: none;
 }
-
 ul.nav.navbar-nav {
     display: inline-block;
     float: none;
-    margin-right: 175px; /*move nav links*/
+    margin-right: 175px;
+    /*move nav links*/
     /* display: block; */
     /*width: 300px;*/
     /*margin: 0 auto;*/
@@ -130,9 +172,11 @@ ul.nav.navbar-nav {
 /*.nav {
 }*/
 
+
 /*a.navbar-brand {
     display: inline-block;
 }*/
+
 
 /*.nav {
     padding: 0 20%;
@@ -144,29 +188,30 @@ ul.nav.navbar-nav {
     border: none;
     z-index: 999;
 }
-
 .navbar-toggle {
     border: 0;
     /*border-color: #ddd; */
 }
-
 .row {
     padding: 0 5px;
 }
-
-.navbar-default .navbar-nav > .active > a,
-.navbar-default .navbar-nav > .active > a:focus,
-.navbar-default .navbar-nav > .active > a:hover {
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
     color: #ddd;
     background-color: #555;
 }
-
 .colreset {
     padding: 0 5px;
 }
-
 .fullheight {
     height: 100%;
+}
+
+#play-btn .row {
+    height: 100%;
+}
+
+#play-btn .row * {
+    height: 33%
 }
 
 /*
@@ -183,19 +228,22 @@ ul.nav.navbar-nav {
 #8D91B2
 */
 
+
 /*#E3E6FF*/
 
 @media (min-width: 768px) {
     div#mini-menu {
         padding-top: 25px;
     }
-
+    .glyphicon.glyphicon-play-circle {
+        font-size: 125px;
+        /*top: 30%;*/
+    }
     /*.navbar-brand {
         width: 100px;
         height: 100px;
         clear: both;
     }*/
-
     .navbar>.container-fluid .navbar-brand {
         /*float: left;*/
         margin-top: 0px;
@@ -204,39 +252,34 @@ ul.nav.navbar-nav {
         width: 200px;
         height: 100px;
     }
-
     div#services {
-    margin-top: 400px;
+        margin-top: 500px;
     }
     /*.jumbotron {*/
-        /*background-image: url("//image.shutterstock.com/z/stock-photo-girl-playing-with-her-golden-retriever-dog-in-summer-park-soft-focus-with-sun-flare-effect-382469704.jpg");*/
-        /*background-size: cover;*/
-        /*background-position: center;*/
-        /*height: 500px;*/
+    /*background-image: url("//image.shutterstock.com/z/stock-photo-girl-playing-with-her-golden-retriever-dog-in-summer-park-soft-focus-with-sun-flare-effect-382469704.jpg");*/
+    /*background-size: cover;*/
+    /*background-position: center;*/
+    /*height: 500px;*/
     /*}*/
     /*.navbar-brand {
         margin-left: 15px;
     }*/
 }
-
 @media (min-width: 1000px) and (max-width: 1500px) {
     .jumbotron {
         /*background-position: top;*/
         height: 700px;
     }
-
     div#services {
-        margin-top: 600px;
+        margin-top: 700px;
     }
 }
-
 @media (min-width: 1500px) {
     .jumbotron {
         /*background-position: top;*/
         height: 900px;
     }
-
     div#services {
-        margin-top: 800px;
+        margin-top: 900px;
     }
 }

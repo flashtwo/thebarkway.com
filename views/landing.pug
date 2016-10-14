@@ -2,14 +2,19 @@ extends layout
 block content
     .jumbotron
         .jt-filter
-            #video-player.container-fluid
+            #video-player.container-fluid(ng-controller="videoplayercontroller")
                 .row
-                    .col-sm-9
-                        p some words
-                    .col-sm-3
-                        div(align="center", class="embed-responsive embed-responsive-16by9")
-                            video.embed-responsive-item
-                                source(src="http://techslides.com/demos/sample-videos/small.mp4", type="video/mp4")
+                    .col-xs-12.full-height
+                .row
+                    .col-xs-6
+                        //- p some words
+                    .col-xs-6
+                        div(align="center", class="embed-responsive wrapper")
+                            video#about-video.embed-responsive-item(ng-click="play()" ng-show="playing")
+                                source(src="video/barkway.mp4", type="video/mp4")
+                            #play-btn(ng-click="play()", ng-show="!playing")
+                            //- img#play-btn.img-rounded(src="/img/vid-screen.png")
+                            //- div#play-btn(ng-click="play()" ng-show="!playing")
                 //- h1 thebarkway
     //- p big fancy landing page! with services
     //-
