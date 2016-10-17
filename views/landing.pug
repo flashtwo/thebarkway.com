@@ -2,115 +2,192 @@ extends layout
 block content
     .jumbotron
         .jt-filter
-            #video-player.container-fluid(ng-controller="videoplayercontroller")
-                .row
-                    .col-xs-12.full-height
-                .row
-                    .col-xs-6
-                        //- p some words
-                    .col-xs-6
-                        div(align="center", class="embed-responsive wrapper")
-                            video#about-video.embed-responsive-item(ng-click="play()" ng-show="playing")
-                                source(src="video/barkway.mp4", type="video/mp4")
-                            #play-btn(ng-click="play()", ng-show="!playing")
-                            //- img#play-btn.img-rounded(src="/img/vid-screen.png")
-                            //- div#play-btn(ng-click="play()" ng-show="!playing")
-                //- h1 thebarkway
+        #video-player.container-fluid(ng-controller="videoplayercontroller")
+            .row.padrow
+                .col-xs-12.full-height
+                    //- h1 blah blah
+            .row
+                .col-xs-6
+                    //- p some words
+                .col-xs-6
+                    div(align="center", class="embed-responsive wrapper")
+                        video#about-video.embed-responsive-item(ng-click="play()" ng-show="playing")
+                            source(src="video/barkway.mp4", type="video/mp4")
+                        #play-btn(ng-click="play()", ng-show="!playing")
+                        //- img#play-btn.img-rounded(src="/img/vid-screen.png")
+                        //- div#play-btn(ng-click="play()" ng-show="!playing")
+            //- h1 thebarkway
     //- p big fancy landing page! with services
     //-
-    #services.container
+    #intro-daycare.container
         .row
             .col-sm-12
-                h2 Services
-        .row.row-centered
-            h3 Daycare
-            .col-md-10.col-centered.col-centered-c
+                //- h2 Services
+        .row
+            //- .text-center
+            .col-sm-6.text-center
+                h2 Daycare
+                br
+            //- .col-sm-6
+
+            //- .col-xs-1
+            //- .col-xs-12.col-centered
                 //- p.text-center
                 //- br
-                div
-                    .line-block.text-center
-                        p
-                            span(class="glyphicon glyphicon-chevron-right", aria-hidden="true")
-                            | Use our webcams to watch your dog anytime!
-                    //- br
-                    .line-block.text-center
-                        p
-                            span(class="glyphicon glyphicon-chevron-right", aria-hidden="true")
-                            | Fun, interactive environment.
-                    //- br
-                    .line-block.text-center
-                        p
-                            span(class="glyphicon glyphicon-chevron-right", aria-hidden="true")
-                            | Any size dog welcome.
-                    //- br
-                    .line-block.text-center
-                        p
-                            span(class="glyphicon glyphicon-chevron-right", aria-hidden="true")
-                            | Play groups with similar temperaments.
-                    //- br
-                    .line-block.text-center
-                        p
-                            span(class="glyphicon glyphicon-chevron-right", aria-hidden="true")
-                            | Nearly 4,000 square feet of play space.
-                    //- br
-                    .line-block.text-center
-                        p
-                            span(class="glyphicon glyphicon-chevron-right", aria-hidden="true")
-                            | Convenient downtown location.
-                    //- br
-                    .line-block.text-center
-                        p
-                            span(class="glyphicon glyphicon-chevron-right", aria-hidden="true")
-                            | Full days or half days.
-                    //- br
-                    .line-block.text-center
-                        p
-                            span(class="glyphicon glyphicon-chevron-right", aria-hidden="true")
-                            | Second dog from same family receives a discount!
-                //- .col-md-2.col-centered
-                    p
-        .row.row-centered
-            .col-md-10.col-centered
-                .col-md-4.col-sm-6
-                    h3 U-Wash – $12
-                    p.justified-box
-                        br
-                        |Convenient access tubs.
-                        br
-                        |We provide shampoo, conditioner, towels, hair dryers, toe nail clippers, etc.
-                        br
-                        |We do the cleanup!
-                .col-md-4.col-sm-6
-                    h3 We Wash – $25
-                    p.justified-box
-                        br
-                        br
-                        |If you don’t want to wash your dog – we can!
-                        br
-                        br
-                        |Nail clip – $10
-                        br
-                        |Anal gland expression – $10
-                //- .col-sm-6
-                .col-md-4.col-sm-6
-                    h3 Overnight Boarding – $12
-                    p.justified-box
-                        br
-                        br
-                        |(In addition to cost of daycare)
-                        br
-                        br
-                        |Spacious kennels with blankets.
-                        br
-                        |Overnight guests join in daycare during the day.
-                        br
-                        |Security system protects overnight guests after normal hours of operation.
-            //- .col-md-2.col-centered
-                p
-            .col-md-12
-                p
-                    h3 Additional Services
+                //- div
+                //- .line-block.text-center
+        p.text-justify.pad-fix
+            //- br
+            //- span(class="glyphicon glyphicon-chevron-right", aria-hidden="true")
+            | With nearly 4,000 sqft of open and airy play areas, our climate-controlled facility is a cage free environment with close supervision to preventing out-of-control play. We pay close attention to dogs in our care, and we'll you know if we notice anything.
+            | You will have full access to check on your pups any time, using our live webcams.
+            | We'll also work with you and your dogs to help identify and resolve any problems you may be concerened with. Whether it be potty-training your puppy, teaching your Lab not to jump up, or helping with anxiety in your Puggle, we can help!
+
+            btn(ng-click()) forms
+
+        //- -------------------------------------------------------------------
+        //- sliding AngularSlideables --------------------------------------------
+        //- -------------------------------------------------------------------
+        #applications
+            p.
+                Applications
+
+                Please complete the application and a waiver. You can either hand deliver or email the completed forms.
+
+                    Application
+                    Waiver – Hold Harmless Agreement
+                    Boarding Information
+
+
+
+        //- br
+        //- hr
+        //- .line-block.text-center
+        //-     p
+        //-         span(class="glyphicon glyphicon-chevron-right", aria-hidden="true")
+        //-         | Open, airy play areas and a climate-controlled facility helps prevent outbreaks of kennel cough and other airborne illnesses.
+        //- br
+        //- .line-block.text-center
+        //-     p
+        //-         span(class="glyphicon glyphicon-chevron-right", aria-hidden="true")
+        //-         | While we do encourage “naptime” once a day, your dog is not crated or separated from the other dogs.
+        //- br
+        //- .line-block.text-center
+        //-     p
+        //-         span(class="glyphicon glyphicon-chevron-right", aria-hidden="true")
+        //-         | Close supervision prevents out-of-control play, and fights over toys.
+        //- br
+        //- .line-block.text-center
+        //-     p
+        //-         span(class="glyphicon glyphicon-chevron-right", aria-hidden="true")
+        //-         | Use our internet webcams to check up on your pup – anytime!
+        //- br
+        //- .line-block.text-center
+        //-     p
+        //-         span(class="glyphicon glyphicon-chevron-right", aria-hidden="true")
+        //-         | We’ll work with you and your dogs to help identify and resolve any problems.
+        //- br
+        //- .line-block.text-center
+        //-     p
+        //-         span(class="glyphicon glyphicon-chevron-right", aria-hidden="true")
+        //-         | We pay close attention to the dogs in our care, and we’ll let you know if we notice anything.
+        //- br
+        //- .line-block.text-center
+        //-     p
+        //-         span(class="glyphicon glyphicon-chevron-right", aria-hidden="true")
+        //-         | Full days or half days.
+        //- //- br
+        //- .line-block.text-center
+        //-     p
+        //-         span(class="glyphicon glyphicon-chevron-right", aria-hidden="true")
+        //-         | Second dog from same family receives a discount!
+    //- .col-md-2.col-centered
+        p
+    //- .col-xs-1
+    #services.strip-shadows
+        .container
+
+
+
+            //- -------------------------------------------------------------------
+            //- Services title ----------------------------------------------------
+            //- -------------------------------------------------------------------
+
+
+
+            .row.text-center
+                .col-md-10.col-centered
+                    .col-sm-4
+                        h3 U-Wash – $12
+                        p.justified-box
+                            br
+                            |Convenient access tubs.
+                            br
+                            |We provide shampoo, conditioner, towels, hair dryers, toe nail clippers, etc.
+                            br
+                            |We do the cleanup!
+                    .col-sm-4
+                        h3 We Wash – $25
+                        p.justified-box
+                            br
+                            br
+                            |If you don’t want to wash your dog – we can!
+                            br
+                            br
+                            |Nail clip – $10
+                            br
+                            |Anal gland expression – $10
+                    //- .col-sm-6
+                    .col-sm-4
+                        h3 Overnight Boarding – $12
+                        p.justified-box
+                            br
+                            br
+                            |(In addition to cost of daycare)
+                            br
+                            br
+                            |Spacious kennels with blankets.
+                            br
+                            |Overnight guests join in daycare during the day.
+                            br
+                            |Security system protects overnight guests after normal hours of operation.
+
+
+
+            //- -------------------------------------------------------------------
+            //- for a full list of services and pricing.---------------------------
+            //- btn click here ----------------------------------------------------
+            //- -------------------------------------------------------------------
+
+
+
+
+    #additional-services.container
+        //- .col-md-12
+        .row
+            .col-sm-6.text-center
+                h2 Additional Services
+                br
+        p.text-center.pad-fix
+            | We also offer alternative pick-up and drop-offs, dog walking, pet sitting and many other services you might need.
+            br
+            | Please call for quotes on these additional services.
+    #location.strip-shadows
+        .container
+            .row
+                .col-sm-6.text-center
+                    h2 Location
                     br
-                    | We also offer alternative pick-up and drop-offs, dog walking, pet sitting and many other services you might need.
-                    br
-                    | Please call for quotes on these additional services.
+            p.text-center We are located at 4891 Washington St, Denver, CO.
+            p  <!-- Responsive iFrame -->
+            .embed-responsive.embed-responsive-4by3
+                iframe.embed-responsive-item(src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3065.970183763107!2d-104.98049098466993!3d39.785224501727015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c79aeca0875c1%3A0x286248c559078acf!2s4891+Washington+St%2C+Denver%2C+CO+80216!5e0!3m2!1sen!2sus!4v1445468152230", frameborder="0", style="border: 0", allowfullscreen="")
+                //- width="600", height="450",
+            p <!-- END Responsive iFrame -->
+
+
+
+//- -------------------------------------------------------------------
+//- for a full list of services and pricing.---------------------------
+//- btn click here ----------------------------------------------------
+//- -------------------------------------------------------------------

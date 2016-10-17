@@ -32,9 +32,6 @@ body.container-fluid {
     padding: 0;
 }
 .jumbotron {
-    background-image: url("//image.shutterstock.com/z/stock-photo-girl-playing-with-her-golden-retriever-dog-in-summer-park-soft-focus-with-sun-flare-effect-382469704.jpg");
-    background-size: cover;
-    background-position: top center;
     /*margin: 0 0 0 auto;*/
     padding: 0;
     width: 100%;
@@ -45,15 +42,45 @@ body.container-fluid {
 .container-fluid .jumbotron {
     padding-right: 0;
     padding-left: 0;
+    padding: 15px;
     border-radius: 2px;
+    filter: drop-shadow(2px 4px 6px #000);
+    -webkit-filter: drop-shadow(2px 4px 6px #000);
 }
 .jt-filter {
-    z-index: 999;
+    /*z-index: -1;*/
+    /*z-index: 999;*/
+    /*background-image: url("//image.shutterstock.com/z/stock-photo-girl-playing-with-her-golden-retriever-dog-in-summer-park-soft-focus-with-sun-flare-effect-382469704.jpg");*/
+    background-image: url("/img/dog-playing.jpg");
+    background-size: cover;
+    background-position: 0% 25%;
+    /*background-position: bottom;*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /*-webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+     -o-filter: blur(2px);
+     -ms-filter: blur(2px);*/
+    /*filter: opacity(0.6);*/
+    filter: brightness(.9);
+
+    /*filter: hue-rotate(30deg);*/
+    /*-webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+     -o-filter: blur(2px);
+     -ms-filter: blur(2px);
+    filter: blur(2px);*/
     /*background-color: rgba(64, 143, 22, 0.2);*/
-    height: 100%;
-    width: 100%;
-    padding: 15px;
+    /*height: 100%;*/
+    /*width: 100%;*/
+    border:
 }
+
+/*.jumbotron .bg {
+}*/
 
 #video-player, #video-player .row * {
     height: 100%;
@@ -107,15 +134,39 @@ body.container-fluid {
 #video-player .row {
     height: 50%;
 }
-div#services {
-    margin-top: 500px;
+div#intro-daycare {
+    margin-top: 550px;
 }
 
+div#services {
+    margin: 50px 0;
+    /*margin-top: 50px;*/
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: #B0C7C0;
+    /*background-color: #AFFFC2;*/
+    /*background-color: #7ED6A0;*/
+}
+
+div#location {
+    margin: 50px 0;
+    /*margin-top: 50px;*/
+    padding-top: 50px;
+    background-color: #4DCF84;
+    /*background-color: #5CCCAB;*/
+    /*background-color: #53B881;*/
+}
+.strip-shadows {
+    filter: drop-shadow(0 1px 7px #787D7A);
+    -webkit-filter: drop-shadow(0 1px 7px #787D7A);
+    /*filter: drop-shadow(0 1px 4px #000);
+    -webkit-filter: drop-shadow(0 1px 4px #000);*/
+}
 /* centered columns */
 
-.row-centered {
+/*.row-centered {
     text-align: center;
-}
+}*/
 .col-centered {
     display: inline-block;
     float: none;
@@ -131,9 +182,10 @@ div#services {
     padding-right: 50px;
     /*text-align: justify;*/
 }
-.line-block {
+
+/*.line-block {
     display: inline-block;
-}
+}*/
 .navbar-brand {
     /*float: left;
     height: 50px;*/
@@ -202,6 +254,11 @@ ul.nav.navbar-nav {
 .colreset {
     padding: 0 5px;
 }
+
+.padrow {
+    padding-top: 75px;
+}
+
 .fullheight {
     height: 100%;
 }
@@ -213,6 +270,32 @@ ul.nav.navbar-nav {
 #play-btn .row * {
     height: 33%
 }
+
+/*.aspect-ratio {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 51%;
+}
+
+.aspect-ratio iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0; top: 0;
+}*/
+
+/*.col-sm-6.headlines {
+    background-color: #242a33;
+    color: #e4e4e4;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 30%;
+    left: 0;
+    position: absolute;
+
+
+}*/
 
 /*
 #b3d88c
@@ -252,8 +335,8 @@ ul.nav.navbar-nav {
         width: 200px;
         height: 100px;
     }
-    div#services {
-        margin-top: 500px;
+    div#intro-daycare {
+        margin-top: 550px;
     }
     /*.jumbotron {*/
     /*background-image: url("//image.shutterstock.com/z/stock-photo-girl-playing-with-her-golden-retriever-dog-in-summer-park-soft-focus-with-sun-flare-effect-382469704.jpg");*/
@@ -265,21 +348,30 @@ ul.nav.navbar-nav {
         margin-left: 15px;
     }*/
 }
-@media (min-width: 1000px) and (max-width: 1500px) {
+
+ /*and (max-width: 1500px)*/
+@media (min-width: 1000px) {
     .jumbotron {
         /*background-position: top;*/
         height: 700px;
     }
-    div#services {
-        margin-top: 700px;
+    div#intro-daycare {
+        margin-top: 750px;
+    }
+    .pad-fix {
+        padding-left: 100px;
+        padding-right: 100px;
     }
 }
-@media (min-width: 1500px) {
+/*@media (min-width: 1500px) {
     .jumbotron {
-        /*background-position: top;*/
         height: 900px;
     }
-    div#services {
+    div#intro-daycare {
         margin-top: 900px;
     }
-}
+    .daycare-intro {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}*/
