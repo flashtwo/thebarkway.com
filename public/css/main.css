@@ -15,10 +15,10 @@ h3 {
     font-family: 'Rancho', cursive;
     font-size: 28px;
 }
-p {
-    /*background-color: rgba(166, 178, 222, 0.9);*/
-    /*background-color: rgba(249, 249, 249, 0.9);*/
-}
+/*p {
+    background-color: rgba(166, 178, 222, 0.9);
+    background-color: rgba(249, 249, 249, 0.9);
+}*/
 html {
     /*background-color: #eee;*/
     /*background-color: #E3E6FF;*/
@@ -216,6 +216,14 @@ div#services {
 button.btn.btn-primary.btn-lg {
     /*margin-right: 25%;*/
 }
+
+div#about-us {
+    padding-top: 25px;
+    padding-bottom: 45px;
+    width: 100%;
+    background-color: #E3E6FF;
+}
+
 div#location {
     margin: 50px 0;
     /*margin-top: 50px;*/
@@ -302,6 +310,11 @@ ul.nav.navbar-nav {
     /*float: none;*/
 }
 
+
+table, td {
+    border: 1px solid #333;
+    padding: 10px;
+}
 /*.nav {
 }*/
 
