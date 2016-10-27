@@ -36,3 +36,10 @@ controllers.controller('videoplayercontroller', ['$scope', function($scope) {
     //     });
     // });
 }]);
+
+controllers.controller('pageController', ['$scope', 'location', function($scope, location) {
+    {
+        location.href = "#";
+        location.href = "#services";
+    }
+}]);

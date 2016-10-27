@@ -1,11 +1,18 @@
 /*margin: 0 auto;*/
-
+h1.jumbs {
+    /*font-size: 20px;*/
+    font-family: 'Rancho', cursive;
+    color: white;
+    text-shadow: -1px -1px 0 #222, 1px -1px 0 #222, -1px 1px 0 #222, 1px 1px 0 #222;
+}
 h2 {
-    font-family: 'PT Sans Caption', sans-serif;
+    /*font-family: 'PT Sans Caption', sans-serif;*/
+    font-family: 'Rancho', cursive;
     font-size: 34px;
 }
 h3 {
-    font-family: 'PT Sans Narrow', sans-serif;
+    /*font-family: 'PT Sans Narrow', sans-serif;*/
+    font-family: 'Rancho', cursive;
     font-size: 28px;
 }
 p {
@@ -13,71 +20,112 @@ p {
     /*background-color: rgba(249, 249, 249, 0.9);*/
 }
 html {
-    background-color: #35383B;
+    /*background-color: #eee;*/
+    /*background-color: #E3E6FF;*/
+    /*background-color: #35383B;*/
     /*background-color: #8B6053;*/
+    background-image: url(http://www.thebarkway.com/wp-content/themes/thebarkway/img/bg.png);
+    background-repeat: repeat;
+    background-attachment: fixed;
     height: 100%;
     width: 100%;
+    /*padding-top: 50px;*/
     /*padding-bottom: 10px;*/
 }
 body {
     background-color: #E3E6FF;
-    /*height: 100%;
-    width: 100%;*/
+    /*background-image: url(http://www.thebarkway.com/wp-content/themes/thebarkway/img/bg.png);*/
+    background-repeat: repeat;
+    background-attachment: fixed;
+    /*height: 100%;*/
+    max-width: 2000px;
     /*margin-bottom: 10px;*/
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
     font-size: 14px;
+    color: #333;
+    filter: drop-shadow(0px 1px 3px #000);
+    -webkit-filter: drop-shadow(0px 1px 3px #000);
 }
 body.container-fluid {
     padding: 0;
 }
-.jumbotron {
-    /*margin: 0 0 0 auto;*/
-    padding: 0;
-    width: 100%;
-    height: 500px;
-    top: 0;
-    position: absolute;
-}
+/*#jumbo-cont {
+    height: 75%;
+}*/
+/*.jumbotron {
+
+}*/
 .container-fluid .jumbotron {
-    padding-right: 0;
-    padding-left: 0;
-    padding: 15px;
-    border-radius: 2px;
-    filter: drop-shadow(2px 4px 6px #000);
-    -webkit-filter: drop-shadow(2px 4px 6px #000);
+    /*padding-right: 0;
+    padding-left: 0;*/
+    /*z-index: 99999999999;*/
+    padding: 0px;
+    padding-top: 100px;
+    border-radius: 1px;
+    margin-bottom: 0;
+    /*height:*/
+    /*min-height: 500px;*/
+
+    /*margin: 0 0 0 auto;*/
+
+    /*padding: 0;*/
+    /*width: 100%;*/
+    /*height: 75%;*/
+    /*height: 500px;*/
+    /*top: 0;*/
+    /*position: absolute;*/
+    /*background-color: rgba(64, 143, 22, 0.9);*/
+    background: url("/img/dog-playing.jpg") no-repeat;
+    /*background-size: auto 500px;*/
+    /*background-size: cover;*/
+    background-position: 25% 0%;
+    background-attachment: fixed;
+    /*filter: drop-shadow(0px 1px 3px #333);
+    -webkit-filter: drop-shadow(0px 1px 3px #333);*/
 }
+/*.push-spaces {*/
+    /*padding: 10em inherit;*/
+    /*height: 600px;*/
+/*}*/
 .jt-filter {
-    /*z-index: -1;*/
-    /*z-index: 999;*/
+    z-index: -1;
+    /*z-index: 99999999;*/
     /*background-image: url("//image.shutterstock.com/z/stock-photo-girl-playing-with-her-golden-retriever-dog-in-summer-park-soft-focus-with-sun-flare-effect-382469704.jpg");*/
-    background-image: url("/img/dog-playing.jpg");
-    background-size: cover;
-    background-position: 0% 25%;
     /*background-position: bottom;*/
+    /*background-position: center;*/
+    background: url("/img/dog-playing.jpg") no-repeat;
+    background-size: cover;
+    background-position: 25% 0%;
+    background-attachment: fixed;
     position: absolute;
     top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    /*left: 0;*/
+    /*right: 0;*/
+    width: 100%;
+    max-width: 1200px;
+    /*bottom: 0;*/
     /*-webkit-filter: blur(2px);
     -moz-filter: blur(2px);
      -o-filter: blur(2px);
      -ms-filter: blur(2px);*/
     /*filter: opacity(0.6);*/
-    filter: brightness(.9);
-
+    /*filter: brightness(.9);*/
     /*filter: hue-rotate(30deg);*/
-    /*-webkit-filter: blur(2px);
-    -moz-filter: blur(2px);
-     -o-filter: blur(2px);
-     -ms-filter: blur(2px);
-    filter: blur(2px);*/
-    /*background-color: rgba(64, 143, 22, 0.2);*/
+    -webkit-filter: blur(1px);
+    -moz-filter: blur(1px);
+     -o-filter: blur(1px);
+     -ms-filter: blur(1px);
+    filter: blur(1px);
     /*height: 100%;*/
     /*width: 100%;*/
-    border:
+    /*border: */
 }
+
+/*.btn {
+    width: 100%;
+}*/
+
 
 /*.jumbotron .bg {
 }*/
@@ -90,9 +138,12 @@ body.container-fluid {
     height: 100%;
 }*/
 
+
 /*video {
     border-radius: 4px;
 }*/
+
+
 /*#video-player .row .col-sm-6.shrink {
     height: 0;
 }*/
@@ -128,26 +179,43 @@ body.container-fluid {
     background-repeat: no-repeat;
     filter: drop-shadow(10px 10px 4px #000);
     -webkit-filter: drop-shadow(10px 10px 4px #000);
-
     /*left: 25%;*/
 }
 #video-player .row {
     height: 50%;
 }
 div#intro-daycare {
-    margin-top: 550px;
+    /*margin-top: 400px;*/
+    padding-top: 25px;
+    padding-bottom: 45px;
+    width: 100%;
+    background-color: #E3E6FF;
+    filter: drop-shadow(0px -1px 4px #333);
+    -webkit-filter: drop-shadow(0px -1px 4px #333);
 }
-
 div#services {
-    margin: 50px 0;
+    margin: 0 0;
     /*margin-top: 50px;*/
-    padding-top: 50px;
+    padding-top: 25px;
     padding-bottom: 50px;
     background-color: #B0C7C0;
     /*background-color: #AFFFC2;*/
     /*background-color: #7ED6A0;*/
 }
-
+.row.row-centered.row-shift {
+    margin-left: 0px;
+}
+.h3-services {
+    /*text-align: center;*/
+    /*margin-right: 80px;*/
+}
+.p-services {
+    margin-left: 25px;
+    /*padding-left: 20%;*/
+}
+button.btn.btn-primary.btn-lg {
+    /*margin-right: 25%;*/
+}
 div#location {
     margin: 50px 0;
     /*margin-top: 50px;*/
@@ -156,17 +224,26 @@ div#location {
     /*background-color: #5CCCAB;*/
     /*background-color: #53B881;*/
 }
+.map-click {
+    background-image: url('/img/map.png');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
 .strip-shadows {
-    filter: drop-shadow(0 1px 7px #787D7A);
-    -webkit-filter: drop-shadow(0 1px 7px #787D7A);
+    /*filter: drop-shadow(0px 0px 2px #333);*/
+    /*-webkit-filter: drop-shadow(0 0px 2px #333);*/
+    filter: drop-shadow(0 0px 4px #787D7A);
+    -webkit-filter: drop-shadow(0 0px 4px #787D7A);
     /*filter: drop-shadow(0 1px 4px #000);
     -webkit-filter: drop-shadow(0 1px 4px #000);*/
 }
+
 /* centered columns */
 
-/*.row-centered {
+.row-centered {
     text-align: center;
-}*/
+}
 .col-centered {
     display: inline-block;
     float: none;
@@ -175,36 +252,40 @@ div#location {
     /* inline-block space fix */
     margin-right: -4px;
 }
-.col-centered-c {
-    text-align: justify;
-}
 .justified-box {
     padding-right: 50px;
-    /*text-align: justify;*/
+    text-align: justify;
 }
+/*.text-outline {
+    color: white;
+    text-shadow: -1px -1px 0 #333, 1px -1px 0 #333, -1px 1px 0 #333, 1px 1px 0 #333;
+}*/
 
 /*.line-block {
     display: inline-block;
 }*/
+
 .navbar-brand {
     /*float: left;
     height: 50px;*/
+    width: 100px;
     margin-left: 15px;
-    margin-top: 5px;
+    /*margin-top: 5px;*/
     /*font-size: 18px;
     line-height: 20px;*/
     background-image: url("/img/logo.png");
     background-size: contain;
     background-repeat: no-repeat;
-    width: 100px;
     /*margin: 15px;*/
 }
-
 nav.navbar.navbar-default {
-    position: fixed;
     width: 100%;
+    max-width: 2000px;
+    position: fixed;
+    top: 0;
+    /*left: 0;*/
+    /*z-index: 99999999999;*/
 }
-
 div#mini-menu {
     text-align: center;
     /*background-color: rgba(2, 2, 2, 0.8);*/
@@ -236,7 +317,7 @@ ul.nav.navbar-nav {
 
 .navbar-default {
     /*background-color: transparent;*/
-    background-color: rgba(2, 2, 2, 0.8);
+    background-color: rgba(2, 2, 2, 0.9);
     border: none;
     z-index: 999;
 }
@@ -254,21 +335,41 @@ ul.nav.navbar-nav {
 .colreset {
     padding: 0 5px;
 }
-
 .padrow {
     padding-top: 75px;
 }
-
 .fullheight {
     height: 100%;
 }
-
 #play-btn .row {
     height: 100%;
 }
-
 #play-btn .row * {
     height: 33%
+}
+.btn {
+    filter: drop-shadow(0px 1px 2px #787D7A);
+    -webkit-filter: drop-shadow(0px 1px 2px #787D7A);
+}
+.btn-pad {
+    padding-top: 30px;
+    margin-right: 0;
+}
+.modal-btn:hover {
+    color: #444;
+    background-color: #B3887B;
+    /*background-color: #A6A8BA;*/
+    /*background-color: #B8BACF;*/
+    /*background-color: #4DCF84;*/
+}
+.modal-btn, .modal-btn:active {
+    color: #333;
+    background-color: #98695B;
+    /*background-color: #8B6053;*/
+    border-radius: 3px;
+    /*font-family: inherit;*/
+    /*background-color: #A97E71;*/
+    /*color: #e4e4e4;*/
 }
 
 /*.aspect-ratio {
@@ -285,6 +386,7 @@ ul.nav.navbar-nav {
     left: 0; top: 0;
 }*/
 
+
 /*.col-sm-6.headlines {
     background-color: #242a33;
     color: #e4e4e4;
@@ -296,6 +398,7 @@ ul.nav.navbar-nav {
 
 
 }*/
+
 
 /*
 #b3d88c
@@ -314,30 +417,93 @@ ul.nav.navbar-nav {
 
 /*#E3E6FF*/
 
+/*@media query {
+
+}*/
+
+@media (max-width: 543px) {
+    .jumbotron, .jt-filter {
+        height: 300px;
+    }
+    .container-fluid .jumbotron {
+        background-size: auto 300px;
+    }
+}
+@media (min-width: 544px) and (max-width: 767px) {
+    .jumbotron, .jt-filter {
+        height: 300px;
+    }
+    .container-fluid .jumbotron {
+        background-size: auto 300px;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .jumbotron, .jt-filter {
+        height: 400px;
+    }
+    .container-fluid .jumbotron {
+        background-size: auto 400px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .jumbotron, .jt-filter {
+        height: 600px;
+    }
+    .container-fluid .jumbotron {
+        background-size: auto 600px;
+    }
+}
+@media (min-width: 1200px) {
+    .jumbotron, .jt-filter {
+        height: 700px;
+    }
+    .container-fluid .jumbotron {
+        background-size: auto 700px;
+    }
+}
+
 @media (min-width: 768px) {
-    div#mini-menu {
+    .btn-pad {
+        /*padding-top: 30px;*/
+        margin-right: 150px;
+    }
+    .navbar>.container-fluid .navbar-brand {
+        /*float: left;*/
+        /*margin-top: 0;*/
+        margin-left: 0;
+        /*padding: 0;*/
+        width: 125px;
+        /*margin-left: 15px;*/
+        /*width: 100px;*/
+        height: 55px;
+    }
+    .navbar {
+        border-radius: 0 0 2px 2px;
+    }
+
+    /*div#mini-menu {
         padding-top: 25px;
+    }*/
+    .row.row-centered.row-shift {
+        margin-left: 50px;
     }
     .glyphicon.glyphicon-play-circle {
         font-size: 125px;
         /*top: 30%;*/
     }
+
     /*.navbar-brand {
         width: 100px;
         height: 100px;
         clear: both;
     }*/
-    .navbar>.container-fluid .navbar-brand {
-        /*float: left;*/
-        margin-top: 0px;
-        margin-left: 0px;
-        padding: 0;
-        width: 200px;
-        height: 100px;
-    }
-    div#intro-daycare {
+
+    /*div#intro-daycare {
         margin-top: 550px;
-    }
+    }*/
+    /*.btn {
+        width: 50%;
+    }*/
     /*.jumbotron {*/
     /*background-image: url("//image.shutterstock.com/z/stock-photo-girl-playing-with-her-golden-retriever-dog-in-summer-park-soft-focus-with-sun-flare-effect-382469704.jpg");*/
     /*background-size: cover;*/
@@ -349,20 +515,26 @@ ul.nav.navbar-nav {
     }*/
 }
 
- /*and (max-width: 1500px)*/
-@media (min-width: 1000px) {
-    .jumbotron {
-        /*background-position: top;*/
-        height: 700px;
-    }
-    div#intro-daycare {
-        margin-top: 750px;
-    }
+/*and (max-width: 1500px)*/
+
+@media (min-width: 992px) {
     .pad-fix {
         padding-left: 100px;
         padding-right: 100px;
     }
+    .justified-box {
+        padding-right: 80px;
+    }
+    /*.jumbotron {
+        background-position: top;
+        height: 700px;
+    }*/
+    /*div#intro-daycare {
+        margin-top: 750px;
+    }*/
+
 }
+
 /*@media (min-width: 1500px) {
     .jumbotron {
         height: 900px;
