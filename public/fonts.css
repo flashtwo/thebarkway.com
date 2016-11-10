@@ -1,0 +1,7 @@
+@font-face {
+	font-family: 'Conv_ebrimabd';
+	src: url('fonts/ebrimabd.eot');
+	src: local('☺'), url('fonts/ebrimabd.woff') format('woff'), url('fonts/ebrimabd.ttf') format('truetype'), url('fonts/ebrimabd.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}

@@ -1,61 +1,7 @@
-// var home = require('./home'),
-    // xX   = require('./xX'),
-    // xX   = require('./xX'),
-    // xX   = require('./xX'),
-    // xX   = require('./xX'),
-    // xX   = require('./xX'),
-    // xX   = require('./xX'),
-    // xX   = require('./xX'),
-    // xX   = require('./xX');
-
-exports.index = function(req, res){
-    res.render('landing', {});
+exports.index = function(req, res) {
+    res.render('landing', {
+        pCdata: {
+            year: new Date().getFullYear()
+        }
+    });
 };
-
-/** serve jade enabled partials */
-exports.partials = function(req, res) {
-    res.render('partials/' + req.params.name);
-};
-
-// exports.landing = function(req, res) {
-//     res.render('landing', {
-//         // function() {
-//         // // this.selected='home';
-//         // }
-//     });
-// };
-
-// exports.home = function(req, res) {
-//     res.render('home', {
-//         function() {
-//             // var selected = 'home';
-//         }
-//     });
-// };
-//
-// exports.xX = (req, res) => {
-//     res.render('xX', () => {
-//
-//     });
-// };
-// exports.xX = function(req, res) {
-//     res.render('xX', xX);
-// };
-// exports.xX = function(req, res) {
-//     res.render('xX', xX);
-// };
-// exports.xX = function(req, res) {
-//     res.render('xX', xX);
-// };
-// exports.xX = function(req, res) {
-//     res.render('xX', xX);
-// };
-// exports.xX = function(req, res) {
-//     res.render('xX', xX);
-// };
-// exports.xX = function(req, res) {
-//     res.render('xX', xX);
-// };
-// exports.xX = function(req, res) {
-//     res.render('xX', xX);
-// };

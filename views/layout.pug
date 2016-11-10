@@ -1,26 +1,27 @@
 doctype html
-html(ng-app="app")
+html
     head
         title= 'The Barkway | Best Friends for Your Best Friend'
-        meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
-        meta(name="mobile-web-app-capable", content="yes")
-        meta(name="apple-mobile-web-app-capable", content="yes")
+        meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
+        meta(name='mobile-web-app-capable', content='yes')
+        meta(name='apple-mobile-web-app-capable', content='yes')
+        meta(name='theme-color' content='#000000')
+        meta(name='msapplication-navbutton-color' content='#000000')
+        meta(name='apple-mobile-web-app-capable' content='yes')
+        meta(name='apple-mobile-web-app-status-bar-style' content='black')
+        link(rel='icon' href='/favicon.ico' sizes='16x16' type='image/vnd.microsoft.icon')
         link(rel='stylesheet', href='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css')
-        link(rel='stylesheet', href="https://fonts.googleapis.com/css?family=Montserrat|Rancho|PT+Sans+Narrow")
+        link(rel='stylesheet', href='fonts.css', charset='utf-8')
+        link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Montserrat|Rancho|PT+Sans+Narrow')
         link(rel='stylesheet', href='css/main.css')
-        //- link(rel='stylesheet', href= routeCss)
-        script(src='//cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.min.js')
-        script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js')
-        script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.slim.min.js')
-        script(src='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js')
+        script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.slim.min.js', type='application/javascript')
+        script(src='//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js', type='application/javascript')
+        script(src='js/instafeed.min.js', type='application/javascript')
+        script(src='js/igfeed.js', type='application/javascript')
+        script(src='js/modal.js', type='application/javascript')
+
     body.container-fluid
         include nav
-        //- #jumbo-cont
         include jumbotron
         include modal
-        //- div(ng-view)
-        //- include landing
         block content
-
-    script(src="app/app.js", type="application/javascript")
-    script(src="app/controllers.js",type="application/javascript")

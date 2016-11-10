@@ -3,7 +3,7 @@
 
 module.exports = function(){
     switch(process.env.NODE_ENV){
-        case 'prod':
+        case 'production':
             return {
                 port: 8080
             };
@@ -11,8 +11,8 @@ module.exports = function(){
         // case 'dev':
         default:
             return {
-                port: 9001,
-                hint: console.log('Add `NODE_ENV=prod` for production settings')
+                port: 3001,
+                hint: console.log('Add `NODE_ENV=production` for production settings')
             };
     }
 };
