@@ -15,10 +15,16 @@ h2 {
     font-family: 'Rancho', cursive;
     color: #333;
     letter-spacing: 0.8px;
+    font-size: 25px;
+    text-align: left;
+    /*margin-left: 150px;*/
 }
 h3 {
     font-family: 'Rancho', cursive;
     color: #333;
+}
+h4 {
+    font-size: 15px;
 }
 a:focus, .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
     outline: 1px auto;
@@ -259,10 +265,11 @@ div#location {
     background-repeat: no-repeat;
 }
 nav.navbar.navbar-default {
-    width: 100%;
     max-width: 2000px;
+    width: 100%;
     position: fixed;
     top: 0;
+    /*right: 0;*/
 }
 nav.navbar.navbar-default container-fluid {
     position: relative;
@@ -291,7 +298,8 @@ table, td {
     padding: 10px;
 }
 .navbar-default {
-    background-color: rgba(2, 2, 2, 0.9);
+    /*background-color: rgba(2, 2, 2, 0.6);*/
+    background-color: rgba(98, 75, 60, 0.9);
     border: none;
     z-index: 999;
 }
@@ -331,6 +339,11 @@ table, td {
 }
 .dropdown-menu>li>a {
     color: inherit;
+}
+#tbwlogo, #hours {
+    display: none;
+    filter: opacity(0.7);
+
 }
 .btn {
     filter: drop-shadow(0px 1px 2px #787D7A);
@@ -409,6 +422,7 @@ table, td {
 @media (min-width: 768px) {
     h2 {
         margin-top: 15px;
+        text-align: center;
     }
     .jumbotron .h1.h1barkway, .jumbotron h1.h1barkway {
         font-size: 100px;
@@ -420,6 +434,14 @@ table, td {
     }
     .navbar {
         border-radius: 0 0 2px 2px;
+    }
+    nav.navbar.navbar-default {
+        background-color: rgba(2, 2, 2, 0.9);
+    }
+    #tbwlogo, #hours {
+        display: block;
+        /*height: 50px;*/
+        filter: opacity(1);
     }
     .h1indent {
         letter-spacing: 1px;

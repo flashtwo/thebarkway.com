@@ -5,7 +5,7 @@ module.exports = function(){
     switch(process.env.NODE_ENV){
         case 'production':
             return {
-                port: 8080
+                port: 80
             };
 
         // case 'dev':
