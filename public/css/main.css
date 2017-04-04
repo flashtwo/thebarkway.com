@@ -3,6 +3,7 @@
     font-weight: 900;
     letter-spacing: -1px;
     font-family:'Conv_ebrimabd',Sans-Serif;
+    text-shadow: -1px 1px 2px #555;
 }
 .h1indent {
     text-indent: 52px;
@@ -17,7 +18,6 @@ h2 {
     letter-spacing: 0.8px;
     font-size: 25px;
     text-align: left;
-    /*margin-left: 150px;*/
 }
 h3 {
     font-family: 'Rancho', cursive;
@@ -65,11 +65,15 @@ body.container-fluid {
     color: #eee;
 }
 .jumbotron span, .jumbotron a:link, .jumbotron a:visited, .jumbotron a:hover, .jumbotron a:active {
-    font-size: 14px;*/
     letter-spacing: 0.4px;
     text-decoration: none;
     font-size: 14px;
-    color: #fff;
+    color: #444;
+    text-shadow: -1px 1px 20px #777;
+}
+.jumbotron blockquote.blockquote-reverse {
+    padding: 5px;
+    border-right: 4px solid #666;
 }
 .glyphicon.glyphicon-phone, .glyphicon.glyphicon-map-marker, .glyphicon.glyphicon-envelope {
     padding-right: 4px;
@@ -78,11 +82,11 @@ body.container-fluid {
     position: relative;
     height: 100%;
     width: 90%;
-    background-image:
+/*    background-image:
         linear-gradient(
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.1)
-    )
+    )*/
 }
 .darken .row {
     width: 100%;
@@ -368,18 +372,18 @@ table, td {
 }
 @media (max-width: 543px) {
     .jumbotron {
-        height: 300px;
+        height: 400px;
     }
     .container-fluid .jumbotron {
-        background-size: auto 300px;
+        background-size: auto 400px;
     }
 }
 @media (min-width: 544px) and (max-width: 767px) {
     .jumbotron {
-        height: 300px;
+        height: 400px;
     }
     .container-fluid .jumbotron {
-        background-size: auto 300px;
+        background-size: auto 400px;
     }
 }
 @media (min-width: 768px) and (max-width: 991px) {
@@ -403,6 +407,12 @@ table, td {
     }
 }
 @media (min-width: 1200px) {
+    .h1 {
+        /*position: absolute;*/
+        /*top: 200px;*/
+        /*left: 45%;*/
+        /*margin: 200px;*/
+    }
     .jumbotron {
         height: 600px;
     }
@@ -471,6 +481,6 @@ table, td {
     }
     .jumbotron span, .jumbotron a:link, .jumbotron a:visited, .jumbotron a:hover, .jumbotron a:active {
         letter-spacing: 0.4px;
-        font-size: 18px;
+        font-size: 16px;
     }
 }
